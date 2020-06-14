@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>Inicio</title>
+</head>
+<body>
+<h2>{{titulo}}</h2>
+<ul>
+    {%for entidad in entidades%}
+    <li>{{entidad.ruc}} : {{entidad.nombre}}</li>
+    {%endfor%}
+</ul>
+</body>
+</html>

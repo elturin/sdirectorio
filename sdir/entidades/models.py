@@ -1,8 +1,10 @@
 from django.db import models
 
 # Create your models here.
-class Indicador(models.Model):
-    nombre = models.CharField(max_length=50)
+
+class Entidad(models.Model):
+    ruc    = models.CharField(max_length=11)
+    nombre = models.CharField(max_length=400)
     fecha_creado = models.DateField(auto_now_add=True)
     fecha_modificado = models.DateField(auto_now=True)
 
