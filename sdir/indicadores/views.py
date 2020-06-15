@@ -25,4 +25,4 @@ class IndicadorEntidad(TemplateView):
         "titulo" : "Indica",
         "entidades" : Entidad.objects.all()
          })
-        return context
+        return (context)
