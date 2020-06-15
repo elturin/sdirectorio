@@ -129,6 +129,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-#produccion static file
+#produccion static file (ejecutar python manage.py collectstatic)
 #STATICFILES_DIRS = ()
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static')
