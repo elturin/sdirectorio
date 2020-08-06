@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^$', inicio_indicadores),
     url(r'^hola/$', demo_vista_basica),
     url(r'^indica/', include('indicadores.urls')),
+    url(r'^api/v1/tramite/', include('tramite.api.urls')),
     path('admin/', admin.site.urls),
 
 ]

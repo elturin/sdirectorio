@@ -4,5 +4,5 @@ from .models import Entidad
 
 @admin.register(Entidad)
 class EntidadAdmin(admin.ModelAdmin):
-    list_display = ('ruc', 'nombre')
+    list_display = ('ruc', 'nombre', 'sigla')
     search_fields = ('nombre',)

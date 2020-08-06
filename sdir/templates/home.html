@@ -1,13 +1,16 @@
-<html>
-<head>
-    <title>Inicio</title>
-</head>
-<body>
+{% extends 'layouts/website.html' %}
+{% block titulo %} Hi {% endblock %}
+{% block body %}
+
 <h2>{{titulo}}</h2>
 <ul>
     {%for entidad in entidades%}
     <li>{{entidad.ruc}} : {{entidad.nombre}}</li>
     {%endfor%}
+    <button type="button" class="btn btn-primary">Buscar</button>
 </ul>
-</body>
-</html>
+
+{% endblock %}
+
+
+
