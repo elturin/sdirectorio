@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Tramite, Cut
+from .models import Tramite, Cut, TramiteUnico
 # Register your models here.
 
 @admin.register(Tramite)
@@ -12,3 +12,8 @@ class TramiteAdmin(admin.ModelAdmin):
 class CutAdmin(admin.ModelAdmin):
     list_display = ('id', 'cut', 'ruc', 'codtramite', 'numero')
     search_fields = ('cut',)
+
+@admin.register(TramiteUnico)
+class TramiteUnicoAdmin(admin.ModelAdmin):
+    list_display = ('codigo', 'tramite')
+    #search_fields = ('tramite',)

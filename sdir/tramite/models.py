@@ -24,3 +24,11 @@ class Cut(models.Model):
 
     def __str__(self):
         return self.cut
+
+
+class TramiteUnico(models.Model):
+    codigo = models.CharField(max_length=8)
+    tramite = models.CharField(max_length=100)
+    fecha = models.DateTimeField(auto_now_add=True)
+    fecha_creado = models.DateField(auto_now_add=True)
+    fecha_modificado = models.DateField(auto_now=True)
